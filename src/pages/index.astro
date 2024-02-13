@@ -1,12 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const OFFICIAL_DATE = new Date("2023-10-07");
+let endTime = new Date();
+let diffInTime = endTime.getTime() - OFFICIAL_DATE.getTime();
+
+let diffInDays = Math.round(diffInTime / (1000 * 3600 * 24));
 ---
 
 <Layout title="astro-cube">
-  <!-- <header>
-    <p class="">hf</p>
-  </header> -->
-
   <main>
     <article class="region prose wrapper hero">
       <h1>happy valentine's day my love</h1>
@@ -17,13 +19,13 @@ import Layout from '../layouts/Layout.astro';
     </article>
 
     <article class="region prose wrapper">
-      <p>i can't believe it's been 1 year since i first gave you flowers. that was the first time i felt happy just making you happy. i remember thinking nung una na idk what i'm doing uli when i gave it cos i was in that phase and told myself i wouldn't wanna be like that with just anyone again. but i knew you weren't just anyone.</p>
+      <p>i can't believe it's been 1 year since i first gave you flowers. that was the first time i felt happy just making you happy. i remember thinking at first that idk what i'm doing uli when i gave it cos i was in that phase and told myself i wouldn't wanna be like that with just anyone again. but i knew you weren't just anyone.</p>
 
       <p>you make me nervous in every good way possible. you've always looked unreal to me. a big reason why i still can't believe you're my gf is cos of your looks. everything about you is the prettiest to me, both your face and your body. you always look so pretty even when you don't try. the way you make me feel when i sneak glances at you is still how you made me feel the first time our eyes met irl. it looked like you had whole universes inside yours. i always wish you could see yourself how i see you whenever you overthink cos you really are the prettiest and that'll never change. you will always be my type and my crush no matter what happens. no one else will ever compare.</p>
 
       <p>but even more than your looks, what made me fall in love with you is just how you are as a person. we're literally the same person. you're the only person i enjoy spending time with more than myself. you make me laugh and smile til my face aches. your presence makes me so calm and relaxed, and i feel like i can be myself only around you. you make me enjoy the smallest things in life. you give me minecraft gifts and make me feel like the only thing i have to worry about is how i'd kill the ender dragon. i will forever be grateful that i get to spend my life with the only person who can make me feel this way. you love me like no one else can.</p>
 
-      <p>i love and will always love you endlessly. you are with me forever mahal ko. i will always be here every valentine's, every day, every second, for the rest of our lives.</p>
+      <p>i love and will always love you endlessly. i really feel like the reason i was put in this world is so i can be with and take care of you. you are with me forever mahal ko. i will always try the hardest for you. and i will always be here every valentine's, every day, every second, for the rest of our lives.</p>
     </article>
 
 
@@ -44,24 +46,21 @@ import Layout from '../layouts/Layout.astro';
         <li class="flow">
           <h3>2. b.y.s</h3>
           <p>
-            this song always reminds me of how addicted i was to u to the point where i almost failed my cs class. i'll always be addicted to spending time with you in any way i can. i'll always choose to be with you over anyone, without a second thought.
+            this song always reminds me of how <em>addicted i was to u</em> to the point where i almost failed my cs class. i'll always be addicted to spending time with you in any way i can. i'll always choose to be with you over anyone, without a second thought.
           </p>
         </li>
 
         <li class="flow">
           <h3>3. bedtime story</h3>
           <p>
-            this was the first song i played on our first date. i couldn't even remember listening to it nun. i just remember 
+            this was the first song i played on our first date. i couldn't even remember listening to it nun. i just remember how nervous i was and that i was begging the bluetooth sa phone ko to connect so i can fill the silence. this song really reminds me of <em>our first date</em> and how <em>pretty</em> you were.
           </p>
         </li>
 
         <li class="flow">
           <h3>4. touch it</h3>
           <p>
-            Spacings and font sizes are <a href="https://utopia.fyi/"
-              ><code>clamp()</code> based</a
-            >, they adapt to the viewport's size instead of arbitrary
-            breakpoints — looks good on <em>all devices</em>.
+            this song is 1 of the first ari songs that comes to mind when i think about you. think ari is 1 of the reasons why we got along agad din. i remember when i asked you about your fave ari songs and this was 1 of them, and for the next few days i had it on repeat to and from school while i'd think about you.
           </p>
         </li>
 
@@ -84,14 +83,31 @@ import Layout from '../layouts/Layout.astro';
             breakpoints — looks good on <em>all devices</em>.
           </p>
         </li>
+
+        <li class="flow">
+          <h3>7. mice on venus</h3>
+          <p>
+            Spacings and font sizes are <a href="https://utopia.fyi/"
+              ><code>clamp()</code> based</a
+            >, they adapt to the viewport's size instead of arbitrary
+            breakpoints — looks good on <em>all devices</em>.
+          </p>
+        </li>
+
+        <li class="flow">
+          <h3>8. mama</h3>
+          <p>
+            Spacings and font sizes are <a href="https://utopia.fyi/"
+              ><code>clamp()</code> based</a
+            >, they adapt to the viewport's size instead of arbitrary
+            breakpoints — looks good on <em>all devices</em>.
+          </p>
+        </li>
       </ul>
     </article>
 
     <footer class="region prose wrapper">
-      See <a href="https://github.com/williamhzo/astro-cube">source code</a>,
-      contributions are welcome! <span role="img" aria-label="waving hand emoji"
-        >👋</span
-      >
+      days we've been together: {diffInDays}
     </footer>
   </main>
 </Layout>
