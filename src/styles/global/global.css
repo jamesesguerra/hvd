@@ -169,3 +169,11 @@ pre {
 footer {
   margin-block-start: var(--space-xl-2xl);
 }
+
+header {
+  /* max-inline-size: var(--content-measure); */
+  position: sticky;
+  background-color: var(--accent-color);
+  top: 0;
+  z-index: 100;
+}
