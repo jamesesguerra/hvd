@@ -68,6 +68,10 @@
   white-space: nowrap !important;
 }
 
+.accent {
+  color: var(--accent-color);
+}
+
 /* === FOR DEBUGGING PURPOSES ONLY! === */
 /*
 * {
